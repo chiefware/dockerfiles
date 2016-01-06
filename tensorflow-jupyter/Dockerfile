@@ -13,4 +13,4 @@ USER root
 VOLUME /notebook
 WORKDIR /notebook
 EXPOSE 8888
-CMD jupyter notebook --data-dir $USER--no-browser --ip=0.0.0.0
+CMD jupyter notebook --data-dir $USER --no-browser --ip=0.0.0.0
