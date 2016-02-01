@@ -7,7 +7,7 @@ RUN /bin/bash -c "source activate /opt/conda/envs/python2/ && pip install https:
 RUN apt-get install -y libx11-dev
 RUN /bin/bash -c "source activate /opt/conda/envs/python2/ && pip install Pillow==2.9.0 matplotlib sklearn"
 RUN /bin/bash -c "source activate /opt/conda/envs/python2/ && pip install -U scikit-learn"
-RUN /bin/bash -c "source activate /opt/conda/envs/python2/ && pip install git+git://github.com/tensorflow/skflow.git"
+RUN /bin/bash -c "source activate /opt/conda/envs/python2/ && pip install git+https://github.com/tensorflow/skflow.git"
 
 USER root
 
